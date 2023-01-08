@@ -1,7 +1,11 @@
 import time
 #import element as element
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+
+
+
+
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -10,8 +14,12 @@ import random
 
 
 
-serv_obj=Service("/Users/vibhuvyas/Documents/coding/chromedriver")
-driver = webdriver.Chrome(service=serv_obj)
+service = ChromeService(executable_path='/Users/vibhuvyas/Documents/coding/chromedriver')
+service.start()
+
+driver = webdriver.Chrome(service=service)
+#serv_obj=Service("/Users/vibhuvyas/Documents/coding/chromedriver")
+#driver = webdriver.Chrome(service=serv_obj)
 driver.get("http://localhost/alumni")
 driver.implicitly_wait(20)
 driver.find_element(By.XPATH,"//*[@id='login']").click()
