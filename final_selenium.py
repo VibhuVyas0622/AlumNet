@@ -14,7 +14,7 @@ import random
 
 
 
-service = ChromeService(executable_path='/Users/vibhuvyas/Documents/coding/chromedriver')
+service = ChromeService(executable_path='/usr/local/bin/chromedriver')
 service.start()
 
 driver = webdriver.Chrome(service=service)
