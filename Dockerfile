@@ -1,6 +1,6 @@
 FROM php:7.4-apache
 
-# Install dependencies
+# Install dependencie
 RUN apt-get update && apt-get install -y \
     libicu-dev \
     libpq-dev \
