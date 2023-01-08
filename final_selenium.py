@@ -10,7 +10,7 @@ import random
 
 
 
-serv_obj=Service("C:\Drivers\chromedriver_win32/chromedriver")
+serv_obj=Service("/Users/vibhuvyas/Documents/coding/chromedriver")
 driver = webdriver.Chrome(service=serv_obj)
 driver.get("http://localhost/alumni")
 driver.implicitly_wait(20)
@@ -175,7 +175,7 @@ time.sleep(3)
 pixels = 100
 driver.execute_script("window.scrollBy(0, arguments[0])", pixels)
 time.sleep(2)
-driver.find_element(By.XPATH,"//*[@id='page-top']/div[2]/div[6]/div/div/div/button").click()
+driver.find_element(By.XPATH,"//*[@id='page-top']/div[2]/div[4]/div/div/div/button").click()
 
 time.sleep(3)
 pixels = 700
