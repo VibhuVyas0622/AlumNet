@@ -32,8 +32,8 @@ driver=webdriver.Chrome(service=service, options=options)
 #driver = webdriver.Chrome(service=serv_obj)
 
 
-#driver.get("http://localhost/alumni")
-driver.get("https://alumnett.000webhostapp.com/")
+driver.get("http://localhost/alumni")
+#driver.get("https://alumnett.000webhostapp.com/")
 driver.implicitly_wait(20)
 driver.find_element(By.XPATH,"//*[@id='login']").click()
 time.sleep(2)
