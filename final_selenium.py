@@ -13,11 +13,21 @@ import string
 import random
 
 
+service = ChromeService(executable_path="/snap/bin/chromium.chromedriver")
+options = webdriver.ChromeOptions()
+options.headless = True
 
-service = ChromeService(executable_path='/usr/local/bin/chromedriver')
-service.start()
+driver=webdriver.Chrome(service=service, options=options)
 
-driver = webdriver.Chrome(service=service)
+
+
+
+
+
+#service = ChromeService(executable_path='/usr/local/bin/chromedriver')
+#service.start()
+
+#driver = webdriver.Chrome(service=service)
 #serv_obj=Service("/Users/vibhuvyas/Documents/coding/chromedriver")
 #driver = webdriver.Chrome(service=serv_obj)
 driver.get("http://localhost/alumni")
