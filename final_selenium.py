@@ -33,7 +33,7 @@ driver=webdriver.Chrome(service=service, options=options)
 
 
 #driver.get("http://localhost/alumni")
-driver.get(" https://de3d-2405-201-d006-70b7-19d8-7e77-2f9f-98ee.in.ngrok.io")
+driver.get("https://alumnett.000webhostapp.com/")
 driver.implicitly_wait(20)
 driver.find_element(By.XPATH,"//*[@id='login']").click()
 time.sleep(2)
