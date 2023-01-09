@@ -30,7 +30,10 @@ driver=webdriver.Chrome(service=service, options=options)
 #driver = webdriver.Chrome(service=service)
 #serv_obj=Service("/Users/vibhuvyas/Documents/coding/chromedriver")
 #driver = webdriver.Chrome(service=serv_obj)
-driver.get("http://localhost/alumni")
+
+
+#driver.get("http://localhost/alumni")
+driver.get(" https://de3d-2405-201-d006-70b7-19d8-7e77-2f9f-98ee.in.ngrok.io")
 driver.implicitly_wait(20)
 driver.find_element(By.XPATH,"//*[@id='login']").click()
 time.sleep(2)
